@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SecurityDB">
+  <DataContextMoniker Name="/SecurityDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ed66b7e1-118f-4314-b180-45a5e782e2be" absoluteBounds="6.5, 3.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/SecurityDBDataContext/Secmap" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bfd12261-de08-4585-9f58-2bededec3ccc" absoluteBounds="6.515, 3.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

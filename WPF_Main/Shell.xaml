@@ -1,0 +1,32 @@
+﻿<Window x:Class="MainView.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       xmlns:vm="clr-namespace:MainView"
+         xmlns:prism="http://www.codeplex.com/prism"
+        mc:Ignorable="d"
+        Title="Shell" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:ShellViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBlock> I am the Shell</TextBlock>
+            <Button Command="{Binding NavToHelloButtonView}" Width="100" Height="27.226" Margin="346,0">
+                <Grid Height="58.065" Width="56.612"/>
+            </Button>
+            <Button x:Name="DatagridButton" Content="Click To Nav" Command="{Binding NavToDatagridView}" Width="100" HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <ContentControl Grid.Row="1"  prism:RegionManager.RegionName="MyRootFrame"/>
+
+
+
+    </Grid>
+</Window>
